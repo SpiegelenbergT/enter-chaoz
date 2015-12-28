@@ -10,6 +10,34 @@ html {
   @extend .nav-link.active;
 }
 
+
+body {
+}
+.main-content {
+    @extend col-sm-6;
+    background-size: cover;
+    height: 800px;
+    z-index: 1;
+    transition: .4s all ease-in-out;
+    &.urban {
+        background: url('/images/urban-background.png');
+        background-position: center;
+        &:hover{
+            box-shadow: -60px 0 90px rgba(0,0,0,.5);
+            background-position: center;
+        }
+    }
+    &.space {
+        background: url('/images/space-background.png');
+    }
+    &:hover {
+        box-shadow: 60px 0 90px rgba(0,0,0,.5);
+        z-index: 999;
+
+    }
+}
+
+
 // --------------
 // Todo Component
 // --------------

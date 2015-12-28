@@ -1,0 +1,259 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>angular2-seed</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script src="assets/js/modernizr.js"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">angular2-seed</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1> angular2-seed</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<h1 id="angular-2-seed-project">Angular 2 - Seed Project</h1>
+				<p><a href="https://travis-ci.org/ghpabs/angular2-seed-project"><img src="https://travis-ci.org/ghpabs/angular2-seed-project.svg?branch=master" alt="Build Status"></a>
+				<a href="https://gitter.im/ghpabs/angular2-seed-project"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Join the chat at https://gitter.im/ghpabs/angular2-seed-project"></a></p>
+				<p>Light-weight and easy to use seed project for Angular 2 apps.</p>
+				<p><img src="http://i.imgur.com/gM0tsOZ.png" width="250px"></p>
+				<h2 id="stack">Stack</h2>
+				<ul>
+					<li><a href="http://gulpjs.com/">Gulp 4</a></li>
+					<li><a href="https://angular.io/">Angular 2</a></li>
+					<li><a href="http://www.typescriptlang.org/">TypeScript</a></li>
+					<li><a href="http://sass-lang.com/">Sass</a></li>
+					<li><a href="http://karma-runner.github.io/">Karma</a></li>
+					<li><a href="http://www.protractortest.org/">Protractor</a></li>
+				</ul>
+				<h2 id="workflow-features">Workflow Features</h2>
+				<ul>
+					<li><strong>Gulp</strong> fully automated workflow.</li>
+					<li><strong>Development</strong> and <strong>production</strong> environment targets.</li>
+					<li><strong>Unit</strong> and <strong>E2E</strong> test samples.</li>
+					<li><strong>Code coverage</strong> report with TypeScript mapping.</li>
+					<li><strong>TypeScript</strong> linting, sourcemaps and transpilation (ES5).</li>
+					<li><strong>Sass</strong> linting, sourcemaps and transpilation.</li>
+					<li><strong>TypeDoc</strong> documentation generator.</li>
+				</ul>
+				<h2 id="angular-2-features">Angular 2 Features</h2>
+				<ul>
+					<li>Directives</li>
+					<li>Pipes</li>
+					<li>Services</li>
+					<li>Router</li>
+					<li>REST API</li>
+					<li>Template Cache</li>
+					<li>Modular Components</li>
+					<li>Dependency Injection</li>
+					<li>Custom Events</li>
+				</ul>
+				<h2 id="install">Install</h2>
+				<pre><code>$ git clone https://github.com/ghpabs/angular2-seed-<span class="hljs-keyword">project</span>.git &amp;&amp; cd angular2-seed-<span class="hljs-keyword">project</span>
+$ npm <span class="hljs-keyword">install</span>
+$ gulp build serve
+</code></pre><p>Note: the <code>serve</code> task won&#39;t automatically launch the browser for you.
+				To view the app please open a new tab and go to <code>http://localhost:8080/</code>.</p>
+				<h2 id="usage">Usage</h2>
+				<h3 id="tasks">Tasks</h3>
+				<ul>
+					<li><code>$ gulp clean</code>: Remove generated folders - <code>build</code>, <code>docs</code> and <code>coverage</code>.</li>
+					<li><code>$ gulp unit</code>: Run Karma against all <code>test/unit/**/*.spec.js</code> files.</li>
+					<li><code>$ gulp e2e</code>: Run Protractor against all <code>test/e2e/**/*.e2e.js</code> files. The project must be being served before running end-to-end tests.</li>
+					<li><code>$ gulp build</code>: Create distribution package. See environment <code>targets</code> below.</li>
+					<li><code>$ gulp serve</code>: Start web-server and live-reload. See environment <code>targets</code> below.</li>
+				</ul>
+				<h3 id="environments">Environments</h3>
+				<p>Default: <code>NODE_ENV=development</code> and <code>PORT=8080</code>.</p>
+				<h4 id="development-">Development:</h4>
+				<ul>
+					<li><code>$ gulp build serve</code> is equivalent to
+					<code>$ NODE_ENV=development PORT=8080 gulp build serve</code>.</li>
+				</ul>
+				<h4 id="production">Production</h4>
+				<ul>
+					<li><code>$ NODE_ENV=production gulp build serve</code>.</li>
+				</ul>
+				<h2 id="ecosystem">Ecosystem</h2>
+				<p>You might have noticed that we have quite a few files in our <code>root</code> folder. You might also be wondering why we need them and whether they are applicable to your use case. Here is a brief explanation:</p>
+				<ul>
+					<li><strong>.travis.yml</strong>: Travis is our Continuos Integration (CI) server and this is its configuration file. We have added hooks to GitHub so automated tests will kick in after each commit.</li>
+					<li><strong>karma.shim.js</strong>: Unit testing Angular2 apps is still in its early days and this file helps us setup the test runner - Karma.</li>
+				</ul>
+				<h2 id="contributing">Contributing</h2>
+				<p>In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. When submitting a PR, make sure that the commit messages match the <a href="https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit-message-format">Angular conventions</a>.</p>
+				<h2 id="license">License</h2>
+				<p>MIT</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_about_about_component_.html">"about/about.component"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_app_.html">"app"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_shared_directives_log_element_directive_.html">"shared/directives/log-<wbr>element.directive"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_shared_pipes_truncate_pipe_.html">"shared/pipes/truncate.pipe"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_shared_services_rest_service_.html">"shared/services/rest.service"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_todo_todo_.html">"todo/todo"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_todo_todo_input_component_.html">"todo/todo-<wbr>input.component"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_todo_todo_item_component_.html">"todo/todo-<wbr>item.component"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_todo_todo_list_component_.html">"todo/todo-<wbr>list.component"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_todo_todo_component_.html">"todo/todo.component"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_todo_todo_interface_.html">"todo/todo.interface"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_todo_todo_service_.html">"todo/todo.service"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
